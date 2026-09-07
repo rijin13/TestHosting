@@ -1,0 +1,112 @@
+{
+  "asset": {
+    "version": "1.1"
+  },
+  "schema": {
+    "id": "3DTilerSchema",
+    "classes": {
+      "campusElement": {
+        "name": "campusElement",
+        "description": "Currently a campusElement references either a building or a level of a building",
+        "properties": {
+          "buildingId": {
+            "description": "This should be the official UzK buildingId, but other id/names can be provided if needed.",
+            "type": "SCALAR",
+            "componentType": "INT8"
+          },
+          "level": {
+            "description": "If this is defined, it means that this campusElement is just this level of the building.",
+            "type": "SCALAR",
+            "componentType": "INT8"
+          }
+        }
+      }
+    }
+  },
+  "root": {
+    "boundingVolume": {
+      "box": [
+        0,
+        0,
+        0,
+        10000,
+        0,
+        0,
+        0,
+        10000,
+        0,
+        0,
+        0,
+        200
+      ]
+    },
+    "children": [
+      {
+        "boundingVolume": {
+          "box": [
+            5.398462295532227,
+            2.7612991333007812,
+            1.600000023841858,
+            38.402400970458984,
+            0,
+            0,
+            0,
+            32.261688232421875,
+            0,
+            0,
+            0,
+            1.600000023841858
+          ]
+        },
+        "content": {
+          "uri": "tileset__303.json"
+        },
+        "metadata": {
+          "class": "campusElement",
+          "properties": {
+            "buildingId": "303"
+          }
+        },
+        "refine": "ADD",
+        "transform": [
+          0.9999999875450806,
+          0.00012253100843784281,
+          -0.00009947859378238444,
+          0,
+          -0.00012252924536290677,
+          0.9999999923361323,
+          0.000017729060236837402,
+          0,
+          0.00009948076537963368,
+          -0.000017716870978956578,
+          0.999999994894845,
+          0,
+          635.7858722627279,
+          -112.92682868708289,
+          -0.032624585554003716,
+          1.0000000000000002
+        ]
+      }
+    ],
+    "geometricError": 20000,
+    "refine": "ADD",
+    "transform": [
+      -0.12062712460954786,
+      0.9926978879842713,
+      0,
+      0,
+      -0.7706863170115904,
+      -0.09364951363581787,
+      0.6302954619596158,
+      0,
+      0.6256929738933811,
+      0.07603072923063509,
+      0.7763553507467535,
+      0,
+      3998831.079016911,
+      485915.70577487565,
+      4928505.253901741,
+      1
+    ]
+  }
+}
